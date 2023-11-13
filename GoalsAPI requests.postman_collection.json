@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "c4f89b3b-ea90-4b30-b7e9-64662acd7842",
+		"name": "GoalsAPI requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31002756"
+	},
+	"item": [
+		{
+			"name": "all-goals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "127.0.0.1:8000/goals"
+			},
+			"response": []
+		},
+		{
+			"name": "goals-by-username",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "127.0.0.1:8000/users/John/goals"
+			},
+			"response": []
+		},
+		{
+			"name": "id-progress",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/goals/1/progress?progress=0.1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"goals",
+						"1",
+						"progress"
+					],
+					"query": [
+						{
+							"key": "progress",
+							"value": "0.1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "id-archive",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "127.0.0.1:8000/goals/1/archive"
+			},
+			"response": []
+		},
+		{
+			"name": "goal",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/goals/1?id=1&progress=0.9",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"goals",
+						"1"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "progress",
+							"value": "0.9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "goal",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "127.0.0.1:8000/goals/3"
+			},
+			"response": []
+		}
+	]
+}
