@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "ed26bf51-e07e-4115-903d-070b3254a592",
+		"name": "CatsAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31002756"
+	},
+	"item": [
+		{
+			"name": "image-info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://api.thecatapi.com/v1/images/8cXEkQQwc"
+			},
+			"response": []
+		},
+		{
+			"name": "image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://cdn2.thecatapi.com/images/aQjokCRd4.jpg"
+			},
+			"response": []
+		},
+		{
+			"name": "favourites/id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "DEMO-API-KEY"
+					}
+				],
+				"url": {
+					"raw": "https://api.thecatapi.com/v1/favourites/:favourite_id",
+					"protocol": "https",
+					"host": [
+						"api",
+						"thecatapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"favourites",
+						":favourite_id"
+					],
+					"variable": [
+						{
+							"key": "favourite_id",
+							"value": "232413577"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "live_l4KMwDvjw8Q2YojpJOb7WfuVjpr8YlJrIZ946urgVlWmmTNfva1rHdU7vGJdFRjd"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/gajda/Downloads/kot.jpeg"
+						},
+						{
+							"key": "sub_id",
+							"value": "my-user-1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "https://api.thecatapi.com/v1/images/upload"
+			},
+			"response": []
+		},
+		{
+			"name": "votes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "live_l4KMwDvjw8Q2YojpJOb7WfuVjpr8YlJrIZ946urgVlWmmTNfva1rHdU7vGJdFRjd"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"image_id\":\"siema\",\n\t\"sub_id\": \"useruser\",\n    \"value\":10\n}"
+				},
+				"url": "https://api.thecatapi.com/v1/votes"
+			},
+			"response": []
+		},
+		{
+			"name": "fav",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "DEMO-API-KEY"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"image_id\":\"asf2\",\n\t\"sub_id\": \"my-user-1234\"\n}"
+				},
+				"url": "https://api.thecatapi.com/v1/favourites"
+			},
+			"response": []
+		},
+		{
+			"name": "image",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "live_l4KMwDvjw8Q2YojpJOb7WfuVjpr8YlJrIZ946urgVlWmmTNfva1rHdU7vGJdFRjd"
+					}
+				],
+				"url": {
+					"raw": "https://api.thecatapi.com/v1/images/:image_id",
+					"protocol": "https",
+					"host": [
+						"api",
+						"thecatapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"images",
+						":image_id"
+					],
+					"variable": [
+						{
+							"key": "image_id",
+							"value": "aQjokCRd4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
