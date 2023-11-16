@@ -35,7 +35,7 @@
 					},
 					{
 						"key": "x-api-key",
-						"value": "DEMO-API-KEY"
+						"value": "{{api-key}}"
 					}
 				],
 				"url": {
@@ -68,7 +68,7 @@
 				"header": [
 					{
 						"key": "x-api-key",
-						"value": "live_l4KMwDvjw8Q2YojpJOb7WfuVjpr8YlJrIZ946urgVlWmmTNfva1rHdU7vGJdFRjd"
+						"value": "{{api-key}}"
 					}
 				],
 				"body": {
@@ -101,7 +101,7 @@
 					},
 					{
 						"key": "x-api-key",
-						"value": "live_l4KMwDvjw8Q2YojpJOb7WfuVjpr8YlJrIZ946urgVlWmmTNfva1rHdU7vGJdFRjd"
+						"value": "{{api-key}}"
 					}
 				],
 				"body": {
@@ -123,7 +123,7 @@
 					},
 					{
 						"key": "x-api-key",
-						"value": "DEMO-API-KEY"
+						"value": "{{api-key}}"
 					}
 				],
 				"body": {
@@ -145,7 +145,7 @@
 					},
 					{
 						"key": "x-api-key",
-						"value": "live_l4KMwDvjw8Q2YojpJOb7WfuVjpr8YlJrIZ946urgVlWmmTNfva1rHdU7vGJdFRjd"
+						"value": "{{api-key}}"
 					}
 				],
 				"url": {
